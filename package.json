@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start:app": "nodemon src/index.js",
-    "start:docker-database": "docker compose up -d"
+    "start:docker-database": "docker compose up -d",
+    "generate-key": "node -e \"console.log(require('crypto').randomBytes(32).toString('hex'))\""
   },
   "author": "",
   "license": "ISC",
